@@ -9,8 +9,8 @@ def join_ingredients(src)
   counter = 0
   message = [ ]
   while counter < join_ingredients.count do 
-    message << "I love #{join_ingredients[counter]} and #{join_ingredients[counter + 1]} on my pizza"
-    counter += 2
+    message << "I love #{join_ingredients[counter][0]} and #{join_ingredients[counter][1]} on my pizza"
+    counter += 1
   end
   message
 end
