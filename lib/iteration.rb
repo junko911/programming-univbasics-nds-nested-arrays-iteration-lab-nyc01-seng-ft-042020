@@ -12,6 +12,7 @@ def join_ingredients(src)
     message << "I love #{join_ingredients[counter]} and #{join_ingredients[counter + 1]} on my pizza"
     counter += 2
   end
+  message
 end
 
 def find_greater_pair(src)
