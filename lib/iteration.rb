@@ -22,8 +22,14 @@ def find_greater_pair(src)
   counter = 0
   larger_numbers = [ ]
   while counter < src.count do
-    larger_numbers << 
+    if src[counter][0] > src[counter][1]
+      larger_numbers << src[counter][0]
+    else
+      larger_numbers << src[counter][1]
+    end
+    counter += 1
   end
+  larger_numbers
 end
 
 def total_even_pairs(src)
