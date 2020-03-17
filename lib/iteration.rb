@@ -8,8 +8,8 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
   counter = 0
   message = [ ]
-  while counter < join_ingredients.count do 
-    message << "I love #{join_ingredients[counter][0]} and #{join_ingredients[counter][1]} on my pizza"
+  while counter < src.count do 
+    message << "I love #{src[counter][0]} and #{src[counter][1]} on my pizza"
     counter += 1
   end
   message
